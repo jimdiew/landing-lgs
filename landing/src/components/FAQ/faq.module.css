@@ -1,0 +1,11 @@
+.accordion {
+    background-color: #2d2d2d !important;
+    color: white !important;
+    box-shadow: none;
+    border: 1px solid white;
+}
+
+.accordion:hover{
+    box-shadow:
+    0 0 5px #00ffff;
+}

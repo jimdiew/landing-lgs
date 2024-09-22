@@ -1,0 +1,6 @@
+.image{
+    mix-blend-mode: overlay;
+    opacity: 100%;
+    transform: scale(1.5);
+    width: 15rem;
+}

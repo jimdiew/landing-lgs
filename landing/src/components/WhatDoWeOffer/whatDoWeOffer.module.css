@@ -1,0 +1,15 @@
+.box {
+    background-color: transparent;
+    border-radius: 16px;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    place-content: center;
+    border: 1px solid #00ffff;
+}
+
+.box:hover {
+    box-shadow:
+    0 0 5px #00ffff;
+}
+
