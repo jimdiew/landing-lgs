@@ -1,11 +1,9 @@
 import {
   Button,
   FormControl,
-  FormHelperText,
   Grid2,
-  Input,
-  InputLabel,
   TextField,
+  Typography,
 } from "@mui/material"
 import { useState } from "react"
 import style from "./contact.module.css"
@@ -42,6 +40,11 @@ const Contact = () => {
       justifyContent={"center"}
       height={"80vh"}
     >
+      <Grid2 container justifyContent={"center"} pb="2rem">
+        <Typography variant="h6" color="white">
+          For more information
+        </Typography>
+      </Grid2>
       <Grid2 container justifyContent={"center"} pb="3rem">
         <FormControl className={style.form}>
           <TextField

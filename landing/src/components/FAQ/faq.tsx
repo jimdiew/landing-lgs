@@ -3,6 +3,7 @@ import {
   AccordionSummary,
   Grid2,
   AccordionDetails,
+  Typography,
 } from "@mui/material"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import style from "./faq.module.css"
@@ -21,7 +22,13 @@ const faq = () => {
       justifyContent={"center"}
       padding={"5rem 0"}
       height={"50vh"}
+      direction={"column"}
     >
+      <Grid2 container>
+        <Typography variant="h6" color="white">
+          FAQ
+        </Typography>
+      </Grid2>
       {FAQ.map(accordion => (
         <Grid2 style={{ width: "50rem" }} padding="1rem 0">
           <Accordion className={style.accordion}>
