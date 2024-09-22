@@ -1,0 +1,31 @@
+.form {
+    color: white;
+    border-bottom: 1px solid #00ffff !important;
+    justify-content: center;
+    width: 50%;
+}
+
+.form::before {
+    border-bottom: 1px solid #00ffff !important;
+}
+.form:focus .form:focus-visible {
+    border-bottom: 1px solid #00ffff !important;
+}
+
+.input{
+    color: white; 
+  
+}
+
+.inputLabel {
+    color: white
+}
+
+.button{
+    background: transparent !important;
+    border: 1px solid #00ffff !important;
+}
+.button:hover{
+    background-color: #00ffff !important ;   
+    color: #2d2d2d; 
+}

@@ -1,6 +1,7 @@
 .image{
     mix-blend-mode: overlay;
-    opacity: 100%;
-    transform: scale(1.5);
+    opacity: 60%;
+    transform: scale(1.8);
+    mix-blend-mode: hard-light;
     width: 15rem;
 }
