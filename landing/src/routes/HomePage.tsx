@@ -23,9 +23,10 @@ const HomePage = () => {
         <Grid2
           container
           pb={"4rem"}
-          pt={"4rem"}
+          pt={"5rem"}
           style={{ height: "70vh" }}
           justifyContent={"center"}
+          alignContent={"center"}
         >
           <HeroSection />
         </Grid2>
