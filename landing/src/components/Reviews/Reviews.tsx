@@ -1,6 +1,5 @@
 import { Grid2, Typography } from "@mui/material"
 import style from "./Reviews.module.css"
-import "react-multi-carousel/lib/styles.css"
 import morningstarLogo from "../../assets/morningstar-games.png"
 import piruloLogo from "../../assets/pirulo.png"
 import theGatheringLogo from "../../assets/the-gathering-place.png"
