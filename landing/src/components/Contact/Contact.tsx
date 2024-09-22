@@ -55,6 +55,7 @@ const Contact = () => {
             className={style.input}
             variant="outlined"
             label="Name"
+            required
           />
           {/* <FormHelperText id="my-helper-text" style={{ color: "white" }}>
             We'll never share your email.
@@ -70,6 +71,7 @@ const Contact = () => {
             onChange={handleChangeEmail}
             variant="outlined"
             label="E-mail"
+            required
           />
           {/* <FormHelperText id="my-helper-text" style={{ color: "white" }}>
             We'll never share your email.
@@ -85,6 +87,16 @@ const Contact = () => {
             onChange={handleChangeMessage}
             variant="outlined"
             label="Message"
+            multiline
+            rows={3}
+            placeholder="Type your message..."
+            required
+            sx={{
+              htmlInput: {
+                color: "white",
+                backgroundColor: "white",
+              },
+            }}
           />
           {/* <FormHelperText id="my-helper-text" style={{ color: "white" }}>
             We'll never share your email.
@@ -92,7 +104,11 @@ const Contact = () => {
         </FormControl>
       </Grid2>
       <Grid2 container justifyContent={"center"} pt="2rem">
-        <Button variant="contained" className={style.button}>
+        <Button
+          variant="contained"
+          className={style.button}
+          disabled={!form.name && !form.email && !form.message}
+        >
           Send
         </Button>
       </Grid2>
