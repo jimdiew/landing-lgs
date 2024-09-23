@@ -11,7 +11,7 @@ const Reviews = () => {
     { logo: theGatheringLogo, review: "Review cliente #3" },
   ]
   return (
-    <Grid2 id="reviews" padding={"5rem"}>
+    <Grid2 id="reviews" padding={"0 5rem"}>
       <Grid2 container justifyContent={"space-between"}>
         {reviews.map(review => (
           <Grid2 className={style.flipCard}>

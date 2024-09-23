@@ -35,9 +35,9 @@ const WhatDoWeOffer = () => {
       container
       justifyContent={"center"}
       alignContent={"center"}
-      height={"60vh"}
+      height={"50vh"}
       id={"what-do-we-offer"}
-      padding={"5rem"}
+      padding={" 0 5rem"}
     >
       {OFFERING.map(offering => (
         <Grid2

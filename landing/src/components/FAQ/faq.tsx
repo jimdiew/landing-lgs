@@ -18,11 +18,11 @@ const faq = () => {
     <Grid2
       container
       id="faq"
+      style={{ height: "100%" }}
       justifyContent={"center"}
       padding={"5rem 0"}
-      height={"60vh"}
+      height={"50vh"}
       direction={"column"}
-      style={{ height: "100%" }}
     >
       <Grid2 container>
         <Typography variant="h6" color="white">
@@ -30,7 +30,7 @@ const faq = () => {
         </Typography>
       </Grid2>
       {FAQ.map(accordion => (
-        <Grid2 style={{ width: "100%" }} padding="1rem 0">
+        <Grid2 padding="1rem 0">
           <Accordion className={style.accordion}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon htmlColor="#00ffff" />}
