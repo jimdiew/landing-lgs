@@ -21,7 +21,7 @@ const faq = () => {
       style={{ height: "100%" }}
       justifyContent={"center"}
       padding={"5rem 0"}
-      height={"50vh"}
+      height={"60vh"}
       direction={"column"}
     >
       <Grid2 container>

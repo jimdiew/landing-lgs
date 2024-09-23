@@ -22,9 +22,9 @@ const HomePage = () => {
       >
         <Grid2
           container
-          pb={"4rem"}
+          pb={"2rem"}
           pt={"5rem"}
-          style={{ height: "70vh" }}
+          height={"80vh"}
           justifyContent={"center"}
           alignContent={"center"}
         >

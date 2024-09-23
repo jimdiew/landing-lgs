@@ -12,7 +12,7 @@ const Reviews = () => {
   ]
   return (
     <Grid2 id="reviews" padding={"5rem"}>
-      <Grid2 container justifyContent={"space-around"}>
+      <Grid2 container justifyContent={"space-between"}>
         {reviews.map(review => (
           <Grid2 className={style.flipCard}>
             <Grid2 className={style.flipCardInner}>

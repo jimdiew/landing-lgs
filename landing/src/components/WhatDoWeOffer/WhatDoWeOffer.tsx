@@ -35,7 +35,7 @@ const WhatDoWeOffer = () => {
       container
       justifyContent={"center"}
       alignContent={"center"}
-      height={"80vh"}
+      height={"60vh"}
       id={"what-do-we-offer"}
       padding={"5rem"}
     >
