@@ -62,7 +62,38 @@ const Contact = () => {
     setForm({ ...form, message: message })
   }
 
-  const sendEmail = () => {}
+  const postData = async (url = "", data = {}) => {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error("Error")
+      }
+
+      const result = await response.json()
+      return result
+    } catch (error) {
+      console.error("Error:", error)
+      return null
+    }
+  }
+
+  const sendEmail = () => {
+    const url = "http://localhost:8080/"
+    const data = {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    }
+
+    postData(url, data)
+  }
   return (
     <Grid2
       container
@@ -133,7 +164,7 @@ const Contact = () => {
           disabled={
             form.name === "" || form.email === "" || form.message === ""
           }
-          onSubmit={sendEmail}
+          onClick={sendEmail}
         >
           Send
         </Button>
