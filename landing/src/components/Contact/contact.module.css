@@ -13,7 +13,7 @@
 }
 
 .input{
-    color: white; 
+    color: white !important; 
   
 }
 
@@ -22,10 +22,19 @@
 }
 
 .button{
+    
+    background-color: #00ffff !important ;   
+    color: #2d2d2d !important; 
+}
+
+.buttonDisabled {
+    background: #fefefe !important;
+    border: 1px solid #fefefe !important;
+    color: gray !important;
+} 
+
+.button:hover{
     background: transparent !important;
     border: 1px solid #00ffff !important;
-}
-.button:hover{
-    background-color: #00ffff !important ;   
-    color: #2d2d2d; 
+    color: #00ffff !important;
 }
